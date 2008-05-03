@@ -14,7 +14,7 @@ require Exporter;
 
 our @ISA       = qw(Exporter);
 our @EXPORT_OK = qw(holidays);
-our $VERSION   = '0.6';
+our $VERSION   = '1.0';
 
 sub holidays{
 	my %parameters = (
@@ -275,12 +275,10 @@ sub holidays{
 	#
 	my @returnlist;
 	foreach(sort{$holidaylist{$a}<=>$holidaylist{$b}}(keys(%holidaylist))){
-		# See if this platform has strftime(%s)
-		# if not, inject seconds manually into format string.
+		# Not all platforms have strftime(%s).
+		# Therefore, inject seconds manually into format string.
 		my $formatstring = $parameters{'FORMAT'};
-		if (strftime('%s', localtime($holidaylist{$_})) eq '%s'){
-			$formatstring =~ s/%{0}%s/$holidaylist{$_}/g;
-		}
+		$formatstring =~ s/%{0}%s/$holidaylist{$_}/g;
 		# Inject the holiday's alias name into the format string
 		# if it was requested by adding %#.
 		$formatstring =~ s/%{0}%#/$_/;
