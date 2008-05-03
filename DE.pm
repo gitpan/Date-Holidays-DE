@@ -14,7 +14,7 @@ require Exporter;
 
 our @ISA       = qw(Exporter);
 our @EXPORT_OK = qw(holidays);
-our $VERSION   = '1.0';
+our $VERSION   = '1.0.1';
 
 sub holidays{
 	my %parameters = (
@@ -501,9 +501,6 @@ None of the calendar programs the author has looked at, know about June 17th.
 
 B<Date::Holidays::DE> is not configurable. Holiday changes don't come over
 night and a new module release can be rolled out within a single day.
-
-B<Date::Holidays::DE> probably won't work in Microsoft's "Windows" operating 
-environment.
 
 =head1 AUTHOR
 

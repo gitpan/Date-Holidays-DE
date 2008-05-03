@@ -12,3 +12,6 @@ v.1.0	Sat May  3 13:28:27 CEST 2008
 	- %s in format string wasn't robust on some platforms. The availability check
 	  was removed and everything dumbed down as kindly suggested by one user.
 	- Used the opportunity for making this a major release.
+
+v.1.0.1 Sat May  3 14:05:56 CEST 2008
+	- Fixed POD wording.
