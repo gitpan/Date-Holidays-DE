@@ -1,0 +1,14 @@
+--- #YAML:1.0
+name:                Date-Holidays-DE
+version:             1.0.2
+abstract:            Determine German Holiday dates
+license:             ~
+author:              
+    - Martin Schmitt <mas at scsy dot de>
+generated_by:        ExtUtils::MakeMaker version 6.42
+distribution_type:   module
+requires:     
+    Date::Calc:                    5
+meta-spec:
+    url:     http://module-build.sourceforge.net/META-spec-v1.3.html
+    version: 1.3

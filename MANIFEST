@@ -6,3 +6,4 @@ README
 test.pl
 example/feiertage.pl
 example/werktage-diff.pl
+META.yml                                 Module meta-data (added by MakeMaker)
