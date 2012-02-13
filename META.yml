@@ -1,6 +1,6 @@
 --- #YAML:1.0
 name:               Date-Holidays-DE
-version:            1.5
+version:            1.6
 abstract:           Determine German Holiday dates
 author:
     - Martin Schmitt <mas at scsy dot de>
